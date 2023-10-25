@@ -1,0 +1,41 @@
+
+Part 2A: Sending Story Data to the Backend API
+My version is found in lines 77-92 models.js in eric_js directory.
+Solution version is found in lines 75-81 model.js in solution directory.
+
+Questions
+
+Looking at the SOLUTION:
+
+1. Kwame how come story isn't quoted inside of data? We aren't using any quotations to differentiate between keys and values why is that? When I look at the api documentation it includes key and value pairs.
+Documentation: https://hackorsnoozev3.docs.apiary.io/#reference/0/stories/create-a-new-story
+
+2. New instantiates a new instance for the story class we're working with. How come we have to do (lines 83-86):
+- this.stories.unshift(story) 
+- user.ownStories.unshift(story)
+After doing some research, unshift adds the specified data in paratheses to the frond of the list. We would of course want the most recent story to be at index 0. Where is the list being created? 
+
+3. I have a general question about how to construct a class in JavaScript. How does the constructor work and why do we have to use the keyword this?
+
+Looking at MY version:
+
+1. Besides missing .unshift() are there any things I should change about my approach to implementing Part 2A functionality?
+
+Part 2B: Building the UI for New Story Form/Add New Story
+
+General question: 
+- When introduced to a new codebase how do you approach figuring out the functionality of all the functions and how to implement them? (For example line 114-119 of solution, how do you know to use that function?)
+
+Looking at the SOLUTION:
+lines 101-120
+- Why do we need to include username in storydata if addStory only takes username, which we get from currentUser, and {title, author, url}?
+
+Part 3:
+    After going over part 2 I am sure I'll be able to complete part 3-5 or at least give it a shot and understand the solution.
+
+
+
+
+
+
+
